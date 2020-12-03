@@ -20,10 +20,6 @@ export default function App() {
     })
   }, []);
 
-  const teste = repositories.map(x => console.log('TECHS', x.techs))
-
-  console.log('Repositories', repositories);
-
   async function handleLikeRepository(id) {
     const response = await api.post(`repositories/${id}/like`);
 
